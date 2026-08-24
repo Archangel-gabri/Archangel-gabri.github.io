@@ -6,14 +6,14 @@
 <style>
   /* Печатная версия: светлая, одна страница A4, без внешних шрифтов —
      PDF собирается из этого файла через Page.printToPDF. */
-  @page { size: A4; margin: 12mm 13mm; }
+  @page { size: A4; margin: 10mm 12mm; }
   *{box-sizing:border-box; margin:0; padding:0}
   body{
     font-family:"Inter","Helvetica Neue",Arial,sans-serif;
-    font-size:9.4pt; line-height:1.4; color:#14181f; background:#fff;
+    font-size:8.9pt; line-height:1.32; color:#14181f; background:#fff;
   }
   a{color:#5b21b6; text-decoration:none}
-  header{border-bottom:2px solid #6D28D9; padding-bottom:7pt; margin-bottom:9pt}
+  header{border-bottom:2px solid #6D28D9; padding-bottom:5pt; margin-bottom:7pt}
   .top{display:flex; gap:11pt; align-items:center}
   .top img{width:62pt; height:62pt; border-radius:50%; object-fit:cover; flex:none}
   h1{font-size:21pt; letter-spacing:-.4pt; line-height:1.05}
@@ -23,9 +23,9 @@
   .sep{color:#b9c0cc; margin:0 4pt}
   h2{
     font-size:8.2pt; letter-spacing:1.3pt; text-transform:uppercase; color:#6b7686;
-    border-bottom:1px solid #e2e6ec; padding-bottom:2pt; margin:9pt 0 5pt;
+    border-bottom:1px solid #e2e6ec; padding-bottom:2pt; margin:7pt 0 4pt;
   }
-  .job{margin-bottom:6.5pt}
+  .job{margin-bottom:5pt}
   .job:last-child{margin-bottom:0}
   .jobhead{display:flex; justify-content:space-between; gap:8pt; align-items:baseline}
   .jobtitle{font-weight:700; font-size:10pt}
@@ -33,7 +33,7 @@
   .when{color:#6b7686; font-size:8.4pt; white-space:nowrap}
   ul{margin:2pt 0 0 11pt}
   li{margin-bottom:1.4pt}
-  .proj{margin-bottom:4.5pt}
+  .proj{margin-bottom:3.5pt}
   .proj b{font-size:9.6pt}
   .stack{color:#4a5464}
   .skills p{margin-bottom:2.4pt}
@@ -48,9 +48,9 @@
     <img src="assets/avatar.jpg" alt="" />
     <div>
       <h1>Vadim Kubrak</h1>
-      <div class="role">AI / LLM Application Engineer</div>
+      <div class="role">Data Engineer · Analytics Engineer</div>
       <div class="contacts">
-        <span>Moscow, Russia — open to EU relocation</span><span class="sep">·</span>
+        <span>Moscow, Russia — remote now; open to employer-supported relocation</span><span class="sep">·</span>
         <span><a href="mailto:kubrak15112006@gmail.com">kubrak15112006@gmail.com</a></span><span class="sep">·</span>
         <span><a href="https://t.me/Castiel68">t.me/Castiel68</a></span><br/>
         <span><a href="https://archangel-gabri.github.io/">archangel-gabri.github.io</a></span><span class="sep">·</span>
@@ -63,13 +63,25 @@
 
 <section>
   <p>
-    I build <b>LLM-powered systems that run in production</b> — not notebooks, not demos. Multi-agent
-    pipelines, RAG and MCP tooling wired into real products, plus the boring half that keeps them alive:
-    deployment, TLS, monitoring, backups and on-call.
+    I build <b>data systems end to end</b>: ingestion, transformation, relational modeling, analytics,
+    APIs, scheduled jobs and production operations with Python, SQL, PostgreSQL and FastAPI.
   </p>
 </section>
 
 <h2>Experience</h2>
+
+<div class="job">
+  <div class="jobhead">
+    <div><span class="jobtitle">Data Engineer</span> <span class="org">— Nizhny Novgorod City Administration</span></div>
+    <div class="when">Jun 2026 — present</div>
+  </div>
+  <ul>
+    <li>Data-engineering team building <b>ProcureCheck</b>: automated compliance checking of public
+        procurement document packages under Russian federal laws 44-FZ and 223-FZ.</li>
+    <li>Python, FastAPI, PDF and DOCX parsing (PyMuPDF, pdfplumber), twenty validation rules, Docker,
+        GitLab CI. <b>More commits in the project than anyone else on the team.</b></li>
+  </ul>
+</div>
 
 <div class="job">
   <div class="jobhead">
@@ -92,13 +104,13 @@
 <div class="job">
   <div class="jobhead">
     <div><span class="jobtitle">Founder, Backend &amp; Infrastructure Engineer</span> <span class="org">— HubVPN</span></div>
-    <div class="when">2024 — present</div>
+    <div class="when">2024 — Aug 2026</div>
   </div>
   <ul>
-    <li>Design, build and operate a multi-node VPN platform with live paying users: a Remnawave control
-        plane over an Xray/VLESS fleet — German master node, Moscow cascade, exits in Finland and Japan.</li>
-    <li>Telegram-first onboarding and subscriptions; DPI-resistant transport (Vision/XHTTP), TLS, nginx,
-        monitoring, backups and incident response handled end to end.</li>
+    <li>Built and operated a multi-node private network platform: a Remnawave control plane over an
+        Xray/VLESS fleet with a German master, a Moscow cascade, and international exit nodes.</li>
+    <li>Provisioning, split routing, TLS, nginx, monitoring, backups and incident response handled end
+        to end; the platform was shut down cleanly in August 2026.</li>
   </ul>
 </div>
 
@@ -106,7 +118,7 @@
 
 <div class="proj">
   <b>Golf Club CRM</b> — booking, membership and billing for a Moscow golf club, in production.
-  53 REST endpoints on FastAPI (SQLAlchemy, Pydantic, JWT); React 18 / TypeScript / Vite front end behind
+  50+ REST endpoints on FastAPI (SQLAlchemy, Pydantic, JWT); React 18 / TypeScript / Vite front end behind
   nginx with TLS.
 </div>
 <div class="proj">
@@ -115,14 +127,12 @@
   structured records. Runs on real hardware.
 </div>
 <div class="proj">
-  <b>Process-level evaluation of 12 LLMs</b> — 75 university mathematics problems graded on the reasoning
-  chain, not just the answer, by an LLM-as-a-judge against a multidimensional rubric. Dataset, prompts and
-  scoring code published openly.
+  <b>Argus desktop application</b> — Electron product hardened through a full test pyramid. Expanded the
+  automated suite from 252 to 451 tests and closed 21 tracked defects.
 </div>
 <div class="proj">
-  <b>GORKYCODE 2025</b> — hackathon service for Russian public tenders: computes the starting contract
-  price under 44-FZ and drafts the technical specification through an LLM-driven dialogue. Spec preparation
-  dropped from roughly eight hours to minutes.
+  <b>FX Analytics</b> — asynchronous ingestion from central-bank, exchange and market-data sources,
+  normalization, historical backfill, bulk upserts and scheduled analytical reports.
 </div>
 
 <h2>Skills</h2>
@@ -130,8 +140,9 @@
   <p><b>AI / LLM:</b> <span class="stack">Claude API · OpenAI API · MCP · RAG · multi-agent orchestration ·
      prompt engineering · LLM-as-a-judge evaluation · embeddings &amp; vector search · LangChain · Ollama ·
      PyTorch · scikit-learn</span></p>
-  <p><b>Backend &amp; data:</b> <span class="stack">Python · FastAPI · SQLAlchemy · Pydantic · ASP.NET Core ·
-     PostgreSQL · SQLite · Redis · REST · JWT/OAuth · pandas · NumPy · SQL</span></p>
+  <p><b>Data &amp; backend:</b> <span class="stack">Python · SQL · ETL/ELT · async data ingestion ·
+     relational data modeling · scheduled jobs · pandas · NumPy · openpyxl · FastAPI · SQLAlchemy ·
+     Pydantic · PostgreSQL · SQLite · ASP.NET Core · REST</span></p>
   <p><b>Frontend:</b> <span class="stack">TypeScript · React 18 · Vite · TanStack Query · Electron</span></p>
   <p><b>Infrastructure:</b> <span class="stack">Linux · Docker Compose · nginx · systemd · GitHub Actions ·
      CI/CD · Grafana · Prometheus · Playwright · Git</span></p>
@@ -156,7 +167,7 @@
   <div>
     <div class="job">
       <div class="jobhead"><div><span class="jobtitle">Languages</span></div></div>
-      <div class="org">Russian — native · English — C2 Proficient,
+      <div class="org">Russian — native · English — C1 Advanced,
         <a href="https://cert.efset.org/AUNUCR">EF SET 89/100</a></div>
     </div>
     <div class="job">
