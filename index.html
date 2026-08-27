@@ -293,6 +293,20 @@
     </article>
 
     <article class="card">
+      <h3>Ghost</h3>
+      <p class="meta">Desktop voice assistant · Qt overlay</p>
+      <p>
+        Speak a question, and it reads what is on screen and streams the answer token-by-token into a
+        frosted-glass overlay. The interesting line is the thread boundary: a QThread owns the whole
+        audio → speech-to-text → model chain and talks to the UI only through signals, so a
+        two-second transcription never freezes the window it is typing into. Speech-to-text runs on
+        Groq or fully offline.
+      </p>
+      <div class="tags"><span class="tag">PySide6</span><span class="tag">Qt</span><span class="tag">Python</span><span class="tag">Whisper</span></div>
+      <a class="more" href="https://github.com/Archangel-gabri/ghost-assistant">View repository →</a>
+    </article>
+
+    <article class="card">
       <h3>Clean Listings</h3>
       <p class="meta">Chrome extension · zero configuration</p>
       <p>
