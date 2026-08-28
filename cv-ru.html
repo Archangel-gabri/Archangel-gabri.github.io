@@ -7,216 +7,249 @@
 </head>
 <body>
 
-<header>
-  <div class="top">
-    <img src="assets/avatar.jpg" alt="" />
-    <div>
-      <h1>Кубрак Вадим Андреевич</h1>
-      <div class="role">Data Engineer / Инженер данных · Data Analyst / Аналитик данных</div>
-      <div class="contacts">
-        <span>Москва · удалённо · готов к релокации при поддержке работодателя</span><span class="sep">·</span>
-        <span><a href="mailto:kubrak15112006@gmail.com">kubrak15112006@gmail.com</a></span><span class="sep">·</span>
-        <span><a href="https://t.me/Castiel68">t.me/Castiel68</a></span><br/>
-        <span><a href="https://archangel-gabri.github.io/">archangel-gabri.github.io</a></span><span class="sep">·</span>
-        <span><a href="https://github.com/Archangel-gabri">github.com/Archangel-gabri</a></span><span class="sep">·</span>
-        <span><a href="https://www.linkedin.com/in/vadimkubrak/">linkedin.com/in/vadimkubrak</a></span><span class="sep">·</span>
-        <span>ORCID <a href="https://orcid.org/0009-0003-1553-2982">0009-0003-1553-2982</a></span>
-      </div>
-    </div>
-  </div>
-</header>
+<aside>
+  <img class="photo" src="assets/avatar.jpg" alt="" />
 
-<section>
-  <p class="lead">
+  <section>
+    <h3>Личные данные</h3>
+    <div class="row"><div class="k">Имя</div><div class="v">Кубрак Вадим Андреевич</div></div>
+    <div class="row"><div class="k">Email</div><div class="v">kubrak15112006@gmail.com</div></div>
+    <div class="row"><div class="k">Telegram</div><div class="v">@Castiel68</div></div>
+    <div class="row"><div class="k">Город</div><div class="v">Москва</div></div>
+    <div class="row"><div class="k">Формат</div><div class="v">Удалённо · готов к релокации при поддержке работодателя</div></div>
+  </section>
+
+  <section>
+    <h3>Ссылки</h3>
+    <div class="row"><div class="k">Сайт</div><div class="v"><a href="https://archangel-gabri.github.io/">archangel-gabri.github.io</a></div></div>
+    <div class="row"><div class="k">GitHub</div><div class="v"><a href="https://github.com/Archangel-gabri">github.com/Archangel-gabri</a></div></div>
+    <div class="row"><div class="k">LinkedIn</div><div class="v"><a href="https://www.linkedin.com/in/vadimkubrak/">linkedin.com/in/vadimkubrak</a></div></div>
+    <div class="row"><div class="k">ORCID</div><div class="v"><a href="https://orcid.org/0009-0003-1553-2982">0009-0003-1553-2982</a></div></div>
+  </section>
+
+  <section>
+    <h3>Образование</h3>
+    <div class="row">
+      <div class="k">РЭУ им. Г. В. Плеханова</div>
+      <div class="v">Бакалавриат, «Статистика» / Data Science<br/>2024 — 2028, учусь</div>
+    </div>
+    <div class="row">
+      <div class="k">Школа 21 (Сбер)</div>
+      <div class="v">Data Science — peer-to-peer, C и алгоритмы<br/>2025 — наст. вр.</div>
+    </div>
+  </section>
+
+  <section>
+    <h3>Языки</h3>
+    <div class="row"><div class="k">Русский</div><div class="v">Родной</div></div>
+    <div class="row"><div class="k">Английский</div><div class="v">C1 Advanced —
+      <a href="https://cert.efset.org/AUNUCR">EF SET 89/100</a></div></div>
+  </section>
+</aside>
+
+<main>
+  <h1>Кубрак Вадим Андреевич</h1>
+  <div class="role">Data Engineer · Data Analyst</div>
+
+  <p class="summary">
     Работаю <b>с обеих сторон задачи о данных</b>: строю пайплайны, которые делают цифры доступными,
     и делаю анализ, который придаёт им смысл. Python и SQL на PostgreSQL, ETL/ELT, реляционное
-    моделирование, плановые задачи, FastAPI там, где нужен интерфейс. За то, что выкатил, отвечаю сам:
-    Docker, Linux, CI/CD, TLS, мониторинг, бэкапы, разбор инцидентов.
+    моделирование, плановые задачи, FastAPI там, где нужен интерфейс. За то, что выкатил, отвечаю
+    сам: Docker, Linux, CI/CD, TLS, мониторинг, бэкапы, разбор инцидентов.
   </p>
-</section>
 
-<h2>Опыт работы</h2>
+  <h2>Навыки и технологии</h2>
 
-<div class="job">
-  <div class="jobhead">
-    <div><span class="jobtitle">Инженер-программист (Data Engineer)</span> <span class="org">— Администрация города Нижнего Новгорода</span></div>
-    <div class="when">июнь 2026 — н. в.</div>
+  <div class="skillgroup">
+    <h4>Инженерия данных</h4>
+    <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">SQLite</span><span class="tag">ETL / ELT</span><span class="tag">Реляционное моделирование</span><span class="tag">Качество данных</span><span class="tag">Плановые задачи</span><span class="tag">Исторический backfill</span><span class="tag">Bulk-upsert</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">openpyxl</span>
   </div>
-  <ul>
-    <li>Команда data-engineering, проект <b>ProcureCheck</b> — автоматическая проверка пакетов
-        закупочной документации по 44-ФЗ и 223-ФЗ. На вход четыре документа, на выходе краткая сводка
-        и полный отчёт по двум десяткам проверок.</li>
-    <li>Python, FastAPI, разбор PDF и DOCX (PyMuPDF, pdfplumber), Docker, GitLab CI.
-        <b>Коммитов в проекте больше, чем у любого другого участника команды.</b></li>
-    <li>Сервис в живой эксплуатации департамента. Свёл три ложные жалобы сотрудников к одной причине —
-        конвертер отдавал текст без пробелов между словами — и починил класс ошибки, а не три её
-        симптома; отдельно нашёл и закрыл молчаливую потерю 52 строк характеристик на реальном
-        документе.</li>
-  </ul>
-</div>
 
-<div class="job">
-  <div class="jobhead">
-    <div><span class="jobtitle">Стажёр-аналитик, Data Analytics</span> <span class="org">— Банк ГПБ (АО), Москва</span></div>
-    <div class="when">март — август 2026</div>
+  <div class="skillgroup">
+    <h4>Аналитика</h4>
+    <span class="tag">Когортное удержание</span><span class="tag">Сегментация клиентов</span><span class="tag">Отток и активность</span><span class="tag">Средний чек</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Plotly</span><span class="tag">Статистика</span><span class="tag">Jupyter</span>
   </div>
-  <ul>
-    <li>Выгружал данные из нескольких таблиц хранилища (транзакции, профили клиентов, история операций),
-        соединял и чистил их в SQL, собрал аналитическую витрину: сегментация клиентов, когортный анализ
-        удержания, метрики активности, среднего чека и оттока.</li>
-    <li>Подавал результаты интерактивными дашбордами на Python (pandas, NumPy, Matplotlib/Plotly) —
-        каждый с коротким выводом на языке бизнеса, а не набором цифр.</li>
-    <li>Главный результат стажировки — инструмент автоматической подготовки регулярного аналитического
-        отчёта: пайплайн собирает данные из нескольких источников, считает метрики, языковая модель
-        пишет текстовый комментарий, который раньше аналитики набирали руками; всё завёрнуто во
-        внутренний веб-интерфейс на FastAPI.
-        <b>Подготовка отчёта: почти рабочий день → около 15 минут.</b></li>
-  </ul>
-</div>
 
-<div class="job">
-  <div class="jobhead">
-    <div><span class="jobtitle">Founder, Backend &amp; Infrastructure Engineer</span> <span class="org">— HubVPN</span></div>
-    <div class="when">2024 — август 2026</div>
+  <div class="skillgroup">
+    <h4>Backend и API</h4>
+    <span class="tag">FastAPI</span><span class="tag">Pydantic</span><span class="tag">REST API</span><span class="tag">JWT</span><span class="tag">ASP.NET Core</span><span class="tag">Telegram Bot API</span>
   </div>
-  <ul>
-    <li>Построил и эксплуатировал многоузловую сетевую платформу: панель Remnawave поверх флота
-        Xray/VLESS — немецкий мастер-узел, московский каскад, зарубежные выходные ноды.</li>
-    <li>Автоматизация провижининга нод через Remnawave API, генерация client-specific роутинга,
-        Telegram-first онбординг на FastAPI, TLS, nginx, systemd, мониторинг, бэкапы, разбор инцидентов —
-        от начала до конца. Платформа свёрнута штатно в августе 2026.</li>
-  </ul>
-</div>
 
-<h2>Проекты</h2>
-<p class="note">Десять репозиториев публичны. Ссылки ведут на код, а не на утверждения о нём.</p>
+  <div class="skillgroup">
+    <h4>AI / LLM</h4>
+    <span class="tag">Claude API</span><span class="tag">OpenAI API</span><span class="tag">OpenRouter</span><span class="tag">MCP</span><span class="tag">RAG</span><span class="tag">Мультиагентная оркестрация</span><span class="tag">Prompt engineering</span><span class="tag">LLM-as-a-judge</span><span class="tag">Векторный поиск</span><span class="tag">Ollama</span><span class="tag">scikit-learn</span><span class="tag">PyTorch</span>
+  </div>
 
-<div class="proj">
-  <b>CRM для гольф-клуба</b> — бронирования, абонементы и расчёты для московского гольф-клуба, работает
-  в проде у заказчика. <b>53 REST-эндпоинта</b> на FastAPI (SQLAlchemy, Pydantic, JWT через
-  httpOnly-cookies), 25+ таблиц; фронтенд React 18 / TypeScript / Vite / TanStack Query за nginx с TLS;
-  Docker Compose, Alembic, PostgreSQL.
-  <span class="links">→ <a href="https://github.com/Archangel-gabri/golf-crm">golf-crm</a></span>
-</div>
+  <div class="skillgroup">
+    <h4>Инфраструктура и DevOps</h4>
+    <span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">nginx</span><span class="tag">systemd</span><span class="tag">TLS</span><span class="tag">GitLab CI</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Grafana</span><span class="tag">Prometheus</span><span class="tag">Playwright</span><span class="tag">Git</span>
+  </div>
 
-<div class="proj">
-  <b>Бенчмарк LLM на университетской математике</b> — открытый датасет и раннер: 12 языковых моделей
-  против 75 задач, оценивается <b>ход решения</b>, а не только финальный ответ, по многомерной рубрике
-  методом LLM-as-a-judge; оценено 887 ответов из 900, тест Фридмана χ² = 351, p &lt; 0,001. Задачи с
-  эталонами, сырые ответы моделей, промпты и код оценки открыты на двух языках, CC BY 4.0 / MIT.
-  <span class="links">→ <a href="https://github.com/Archangel-gabri/llm-university-math-benchmark">датасет</a>
-  · <a href="https://github.com/Archangel-gabri/llm-math-benchmark-harness">раннер</a></span>
-</div>
+  <div class="skillgroup">
+    <h4>Frontend</h4>
+    <span class="tag">TypeScript</span><span class="tag">React 18</span><span class="tag">Vite</span><span class="tag">TanStack Query</span><span class="tag">Tailwind CSS</span><span class="tag">Electron</span>
+  </div>
 
-<div class="proj">
-  <b>Argus</b> — локальный командный центр на Electron: свои серверы, подписки, финансы и квоты
-  AI-провайдеров в одном окне. Хранилище — SQLCipher с ключом Argon2id, секреты не покидают
-  привилегированный процесс. Интересным ограничением была честность состояния: «недоступен» и
-  «выключен» — разные вещи, поэтому один неудавшийся опрос никогда не помечает живую машину как
-  упавшую. <b>994 теста в 87 файлах.</b> TypeScript, React, Tailwind, better-sqlite3.
-  <span class="links">→ <a href="https://github.com/Archangel-gabri/argus">argus</a></span>
-</div>
+  <h2>Опыт работы</h2>
 
-<div class="pagebreak"></div>
-
-<div class="runhead">
-  <div class="who">Кубрак Вадим Андреевич</div>
-  <div class="what">Data Engineer &amp; Data Analyst — страница 2 из 2</div>
-</div>
-
-<div class="proj">
-  <b>FX Analytics</b> — анализ валютных рисков для компании-экспортёра <i>(проект закрыт в августе
-  2026)</i>. Асинхронный сбор из ЦБ РФ (XML), MOEX ISS и yfinance, нормализация, исторический backfill,
-  bulk-upsert и плановые отчёты; конвейер из четырёх агентов на Claude API с Tool Use
-  (Orchestrator → Collector → Quant + Macro → Reporter) и MCP-сервер. Около $2,3 стоимости моделей на
-  полный анализ.
-</div>
-
-<div class="proj">
-  <b>MedSpravki REU</b> — информационная система учёта медицинских справок кафедры физкультуры РЭУ.
-  ASP.NET Core + PostgreSQL, локальная vision-модель Ollama читает сканы справок в структурированные
-  записи. Развёрнута на реальном железе.
-  <span class="links">→ <a href="https://github.com/Archangel-gabri/medspravki-reu">medspravki-reu</a></span>
-</div>
-
-<div class="proj">
-  <b>«Чистая выдача» / Clean Listings</b> — браузерное расширение с открытым кодом, MIT. Чистит выдачу
-  классифайда от перекупов по собственному критерию, а не по фильтру площадки. Производительность мерил,
-  а не угадывал: <b>замирание страницы при отрисовке 0,8 c → 0,19 c</b>; 28 регрессионных тестов,
-  README на двух языках.
-  <span class="links">→ <a href="https://github.com/Archangel-gabri/clean-listings">clean-listings</a></span>
-</div>
-
-<div class="proj">
-  <b>«Где дешевле» / Price Elsewhere</b> — расширение MV3 без бэкенда: товар открыт на одной площадке —
-  видно цену на двух других. Общего идентификатора товара у площадок нет, сопоставление идёт по бренду,
-  модели и числам; расширение намеренно показывает <i>обычную</i> цену (усечённая медиана), а не самую
-  низкую, потому что в дешёвом хвосте живут подделки и не те комплектации. Когда совпадение неуверенное —
-  так и говорит, вместо обещания выгоды, которую не может подтвердить.
-  <span class="links">→ <a href="https://github.com/Archangel-gabri/price-elsewhere">price-elsewhere</a></span>
-</div>
-
-<div class="proj">
-  <b>Ghost</b> — голосовой ассистент с экранным контекстом на PySide6/Qt: слышит вопрос, читает
-  содержимое экрана и печатает ответ потоком в оверлей. QThread держит всю цепочку звук → распознавание
-  → модель и общается с интерфейсом только сигналами, поэтому двухсекундное распознавание не морозит
-  окно, в которое печатает. Распознавание речи — Groq или полностью офлайн через faster-whisper.
-  <span class="links">→ <a href="https://github.com/Archangel-gabri/ghost-assistant">ghost-assistant</a></span>
-</div>
-
-<div class="proj">
-  <b>Хакатон «GORKYCODE 2025»</b> — AI-сервис автоматизации госзакупок: расчёт НМЦК и генерация ТЗ по
-  44-ФЗ, многошаговый диалоговый сбор требований через webhook, GigaChat для анализа ответов, модуль
-  цены на данных <span class="stack">zakupki.gov.ru</span>. Подготовка ТЗ: 8 часов → минуты.
-</div>
-
-<h2>Навыки</h2>
-<div class="skills">
-  <p><b>Инженерия данных:</b> <span class="stack">Python · SQL · ETL/ELT · асинхронный сбор данных ·
-     реляционное моделирование · качество данных · плановые задачи · исторический backfill ·
-     bulk-upsert · PostgreSQL · SQLite · SQLAlchemy · Alembic · openpyxl</span></p>
-  <p><b>Аналитика:</b> <span class="stack">когортное удержание · сегментация клиентов · метрики оттока
-     и активности · средний чек · pandas · NumPy · Matplotlib · Plotly · статистика · Jupyter</span></p>
-  <p><b>Backend:</b> <span class="stack">FastAPI · Pydantic · REST · JWT · ASP.NET Core ·
-     Telegram Bot API</span></p>
-  <p><b>AI / LLM:</b> <span class="stack">Claude API · OpenAI API · OpenRouter · Ollama · MCP · RAG ·
-     мультиагентная оркестрация · prompt engineering · оценка методом LLM-as-a-judge · эмбеддинги и
-     векторный поиск · scikit-learn · PyTorch</span></p>
-  <p><b>Инфраструктура и DevOps:</b> <span class="stack">Linux · Docker / Docker Compose · nginx ·
-     systemd · TLS · GitLab CI · GitHub Actions · CI/CD · Grafana · Prometheus · Playwright · Git ·
-     мониторинг, бэкапы и разбор инцидентов на живых нодах</span></p>
-  <p><b>Frontend:</b> <span class="stack">TypeScript · React 18 · Vite · TanStack Query · Tailwind CSS ·
-     Electron</span></p>
-</div>
-
-<h2>Образование и языки</h2>
-<div class="two">
-  <div>
-    <div class="job">
-      <div class="jobhead">
-        <div><span class="jobtitle">РЭУ им. Г. В. Плеханова</span></div>
-      </div>
-      <div class="org">Бакалавриат, «Статистика» / Data Science — учусь (2024 — 2028)</div>
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">Инженер-программист (Data&nbsp;Engineer) | Администрация города Нижнего Новгорода</div>
+      <div class="when">июнь 2026 — н. в.</div>
     </div>
-    <div class="job">
-      <div class="jobhead">
-        <div><span class="jobtitle">Школа 21 (Сбер)</span></div>
-      </div>
-      <div class="org">Data Science — peer-to-peer, C и алгоритмы (2025 — н. в.)</div>
-    </div>
+    <div class="sub">Команда data-engineering, проект ProcureCheck</div>
+    <ul>
+      <li>Автоматическая проверка пакетов закупочной документации по 44-ФЗ и 223-ФЗ: на вход четыре
+          документа, на выходе краткая сводка и полный отчёт по двум десяткам проверок.</li>
+      <li>Python, FastAPI, разбор PDF и DOCX (PyMuPDF, pdfplumber), Docker, GitLab CI.
+          <b>Коммитов в проекте больше, чем у любого другого участника команды.</b></li>
+      <li>Сервис в живой эксплуатации департамента. Свёл три ложные жалобы сотрудников к одной
+          причине — конвертер отдавал текст без пробелов между словами — и починил класс ошибки,
+          а не три её симптома; отдельно нашёл и закрыл молчаливую потерю 52 строк характеристик.</li>
+    </ul>
   </div>
-  <div>
-    <div class="job">
-      <div class="jobhead"><div><span class="jobtitle">Языки</span></div></div>
-      <div class="org">Русский — родной · Английский — C1 Advanced,
-        <a href="https://cert.efset.org/AUNUCR">EF SET 89/100</a></div>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">Стажёр-аналитик, Data Analytics | Банк ГПБ (АО), Москва</div>
+      <div class="when">март — август 2026</div>
     </div>
-    <div class="job">
-      <div class="jobhead"><div><span class="jobtitle">Научный профиль</span></div></div>
-      <div class="org">ORCID <a href="https://orcid.org/0009-0003-1553-2982">0009-0003-1553-2982</a></div>
-    </div>
+    <div class="sub">Продуктовая и клиентская аналитика</div>
+    <ul>
+      <li>Выгружал данные из нескольких таблиц хранилища (транзакции, профили клиентов, история
+          операций), соединял и чистил их в SQL, собрал аналитическую витрину: сегментация клиентов,
+          когортный анализ удержания, метрики активности, среднего чека и оттока.</li>
+      <li>Подавал результаты интерактивными дашбордами на Python (pandas, NumPy, Matplotlib / Plotly) —
+          каждый с коротким выводом на языке бизнеса, а не набором цифр.</li>
+      <li>Главный результат — инструмент автоматической подготовки регулярного аналитического отчёта:
+          пайплайн собирает данные из нескольких источников, считает метрики, языковая модель пишет
+          комментарий, который раньше аналитики набирали руками; всё во внутреннем веб-интерфейсе
+          на FastAPI.</li>
+    </ul>
+    <div class="res"><b>Результат:</b> подготовка отчёта — с почти полного рабочего дня до 15 минут.</div>
   </div>
-</div>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">Founder, Backend &amp; Infrastructure Engineer | HubVPN</div>
+      <div class="when">2024 — август 2026</div>
+    </div>
+    <div class="sub">Собственная многоузловая сетевая платформа, свёрнута штатно</div>
+    <ul>
+      <li>Панель Remnawave поверх флота Xray/VLESS: немецкий мастер-узел, московский каскад,
+          зарубежные выходные ноды.</li>
+      <li>Провижининг нод через API, генерация client-specific роутинга, Telegram-first онбординг
+          на FastAPI; TLS, nginx, systemd, мониторинг, бэкапы и разбор инцидентов — от начала до конца.</li>
+    </ul>
+  </div>
+
+  <h2>Проекты</h2>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">CRM для гольф-клуба</div>
+      <div class="when">2025 — 2026</div>
+    </div>
+    <div class="sub">Production-ready система управления клубом, работает в проде у заказчика</div>
+    <ul>
+      <li>Backend на FastAPI + SQLAlchemy: <b>53 REST-эндпоинта</b>, 25+ таблиц БД,
+          JWT-авторизация через httpOnly-cookies.</li>
+      <li>Frontend на React 18 + TypeScript + Vite + TanStack Query: tee-sheet бронирований
+          и дашборды аналитики; Docker Compose, nginx с TLS, Alembic, PostgreSQL.</li>
+    </ul>
+    <div class="links">→ github.com/Archangel-gabri/golf-crm</div>
+  </div>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">Бенчмарк LLM на университетской математике</div>
+      <div class="when">2026</div>
+    </div>
+    <div class="sub">Открытый датасет и раннер, CC BY 4.0 / MIT</div>
+    <ul>
+      <li>12 языковых моделей против 75 задач; оценивается <b>ход решения</b>, а не только финальный
+          ответ, по многомерной рубрике методом LLM-as-a-judge.</li>
+      <li>Оценено 887 ответов из 900, тест Фридмана χ² = 351, p &lt; 0,001. Задачи с эталонами, сырые
+          ответы моделей, промпты и код оценки открыты на двух языках.</li>
+    </ul>
+    <div class="links">→ github.com/Archangel-gabri/llm-university-math-benchmark · llm-math-benchmark-harness</div>
+  </div>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">Argus</div>
+      <div class="when">2026</div>
+    </div>
+    <div class="sub">Локальный командный центр на Electron</div>
+    <ul>
+      <li>Свои серверы, подписки, финансы и квоты AI-провайдеров в одном окне. Хранилище — SQLCipher
+          с ключом Argon2id, секреты не покидают привилегированный процесс.</li>
+      <li>Ограничением была честность состояния: «недоступен» и «выключен» — разные вещи, поэтому один
+          неудавшийся опрос не помечает живую машину упавшей. <b>994 теста в 87 файлах.</b></li>
+    </ul>
+    <div class="links">→ github.com/Archangel-gabri/argus</div>
+  </div>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">FX Analytics</div>
+      <div class="when">2026</div>
+    </div>
+    <div class="sub">Мультиагентный анализ валютных рисков для компании-экспортёра (проект закрыт)</div>
+    <ul>
+      <li>Конвейер из четырёх агентов на Claude API с Tool Use (Orchestrator → Collector →
+          Quant + Macro → Reporter) и MCP-сервер.</li>
+      <li>Асинхронный сбор из ЦБ РФ (XML), MOEX ISS и yfinance, нормализация, исторический backfill,
+          bulk-upsert и плановые отчёты. Около $2,3 стоимости моделей на полный анализ.</li>
+    </ul>
+  </div>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">MedSpravki REU</div>
+      <div class="when">2026</div>
+    </div>
+    <div class="sub">ИС учёта медицинских справок кафедры физкультуры РЭУ</div>
+    <ul>
+      <li>ASP.NET Core + PostgreSQL; локальная vision-модель Ollama читает сканы справок
+          в структурированные записи. Развёрнута на реальном железе.</li>
+    </ul>
+    <div class="links">→ github.com/Archangel-gabri/medspravki-reu</div>
+  </div>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">«Чистая выдача» и «Где дешевле»</div>
+      <div class="when">2026</div>
+    </div>
+    <div class="sub">Два браузерных расширения с открытым кодом, MV3, MIT</div>
+    <ul>
+      <li>«Чистая выдача» чистит выдачу классифайда от перекупов по собственному критерию, а не по
+          фильтру площадки. Производительность мерил, а не угадывал:
+          <b>замирание страницы 0,8 c → 0,19 c</b>; 28 регрессионных тестов.</li>
+      <li>«Где дешевле» сравнивает цену товара на трёх маркетплейсах без общего идентификатора —
+          по бренду, модели и числам; показывает обычную цену, а не самую низкую, и честно молчит,
+          когда совпадение неуверенное.</li>
+    </ul>
+    <div class="links">→ github.com/Archangel-gabri/clean-listings · price-elsewhere</div>
+  </div>
+
+  <div class="entry">
+    <div class="ehead">
+      <div class="etitle">Ghost | Хакатон «GORKYCODE 2025»</div>
+      <div class="when">2025 — 2026</div>
+    </div>
+    <div class="sub">Голосовой ассистент на PySide6/Qt · AI-сервис автоматизации госзакупок</div>
+    <ul>
+      <li>Ghost слышит вопрос, читает содержимое экрана и печатает ответ потоком в оверлей; QThread
+          держит цепочку звук → распознавание → модель и общается с интерфейсом только сигналами,
+          поэтому распознавание не морозит окно.</li>
+      <li>GORKYCODE: расчёт НМЦК и генерация ТЗ по 44-ФЗ, многошаговый диалоговый сбор требований
+          через webhook, GigaChat для анализа ответов. <b>Подготовка ТЗ: 8 часов → минуты.</b></li>
+    </ul>
+    <div class="links">→ github.com/Archangel-gabri/ghost-assistant</div>
+  </div>
+</main>
 
 </body>
 </html>
