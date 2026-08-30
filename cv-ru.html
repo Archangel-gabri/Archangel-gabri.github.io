@@ -16,7 +16,7 @@
     <div class="row"><div class="k">Email</div><div class="v">kubrak15112006@gmail.com</div></div>
     <div class="row"><div class="k">Telegram</div><div class="v">@Castiel68</div></div>
     <div class="row"><div class="k">Город</div><div class="v">Москва</div></div>
-    <div class="row"><div class="k">Формат</div><div class="v">Удалённо · готов к релокации при поддержке работодателя</div></div>
+    <div class="row"><div class="k">Формат</div><div class="v">Удалённо · готов к переезду при поддержке работодателя</div></div>
   </section>
 
   <section>
@@ -52,22 +52,23 @@
   <div class="role">Data Engineer · Data Analyst</div>
 
   <p class="summary">
-    Работаю <b>с обеих сторон задачи о данных</b>: строю пайплайны, которые делают цифры доступными,
-    и делаю анализ, который придаёт им смысл. Python и SQL на PostgreSQL, ETL/ELT, реляционное
-    моделирование, плановые задачи, FastAPI там, где нужен интерфейс. За то, что выкатил, отвечаю
-    сам: Docker, Linux, CI/CD, TLS, мониторинг, бэкапы, разбор инцидентов.
+    Работаю с данными <b>с двух сторон</b>: строю пайплайны, которые их собирают и приводят
+    в порядок, и сам же считаю метрики и объясняю, что из них следует. Python и SQL
+    на PostgreSQL, ETL/ELT, проектирование схем, выгрузки по расписанию, FastAPI — когда к данным
+    нужен интерфейс. Что запустил, то и сопровождаю: Docker, Linux, CI/CD, TLS, мониторинг,
+    бэкапы, разбор инцидентов.
   </p>
 
   <h2>Навыки и технологии</h2>
 
   <div class="skillgroup">
     <h4>Инженерия данных</h4>
-    <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">SQLite</span><span class="tag">ETL / ELT</span><span class="tag">Реляционное моделирование</span><span class="tag">Качество данных</span><span class="tag">Плановые задачи</span><span class="tag">Исторический backfill</span><span class="tag">Bulk-upsert</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span><span class="tag">openpyxl</span>
+    <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">PostgreSQL</span><span class="tag">SQLite</span><span class="tag">ETL / ELT</span><span class="tag">Проектирование схем БД</span><span class="tag">Качество данных</span><span class="tag">Задачи по расписанию</span><span class="tag">Парсинг PDF и DOCX</span><span class="tag">SQLAlchemy</span><span class="tag">Alembic</span>
   </div>
 
   <div class="skillgroup">
     <h4>Аналитика</h4>
-    <span class="tag">Когортное удержание</span><span class="tag">Сегментация клиентов</span><span class="tag">Отток и активность</span><span class="tag">Средний чек</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Plotly</span><span class="tag">Статистика</span><span class="tag">Jupyter</span>
+    <span class="tag">Когортный анализ</span><span class="tag">Сегментация клиентов</span><span class="tag">Отток и удержание</span><span class="tag">Продуктовые метрики</span><span class="tag">Дашборды</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Matplotlib</span><span class="tag">Plotly</span><span class="tag">Статистика</span><span class="tag">Jupyter</span>
   </div>
 
   <div class="skillgroup">
@@ -77,12 +78,12 @@
 
   <div class="skillgroup">
     <h4>AI / LLM</h4>
-    <span class="tag">Claude API</span><span class="tag">OpenAI API</span><span class="tag">OpenRouter</span><span class="tag">MCP</span><span class="tag">RAG</span><span class="tag">Мультиагентная оркестрация</span><span class="tag">Prompt engineering</span><span class="tag">LLM-as-a-judge</span><span class="tag">Векторный поиск</span><span class="tag">Ollama</span><span class="tag">scikit-learn</span><span class="tag">PyTorch</span>
+    <span class="tag">Claude API</span><span class="tag">OpenAI API</span><span class="tag">OpenRouter</span><span class="tag">Ollama</span><span class="tag">MCP</span><span class="tag">RAG</span><span class="tag">Prompt engineering</span><span class="tag">LLM-as-a-judge</span><span class="tag">Векторный поиск</span><span class="tag">scikit-learn</span><span class="tag">PyTorch</span>
   </div>
 
   <div class="skillgroup">
     <h4>Инфраструктура и DevOps</h4>
-    <span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">nginx</span><span class="tag">systemd</span><span class="tag">TLS</span><span class="tag">GitLab CI</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Grafana</span><span class="tag">Prometheus</span><span class="tag">Playwright</span><span class="tag">Git</span>
+    <span class="tag">Linux</span><span class="tag">Docker</span><span class="tag">Docker Compose</span><span class="tag">nginx</span><span class="tag">systemd</span><span class="tag">TLS</span><span class="tag">GitLab CI</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Playwright</span><span class="tag">Git</span>
   </div>
 
   <div class="skillgroup">
@@ -99,13 +100,15 @@
     </div>
     <div class="sub">Команда data-engineering, проект ProcureCheck</div>
     <ul>
-      <li>Автоматическая проверка пакетов закупочной документации по 44-ФЗ и 223-ФЗ: на вход четыре
-          документа, на выходе краткая сводка и полный отчёт по двум десяткам проверок.</li>
+      <li>Делаю сервис, который проверяет пакеты закупочной документации по 44-ФЗ и 223-ФЗ: на вход
+          четыре файла — извещение, проект контракта, описание объекта закупки и требования
+          к заявке, на выходе короткая сводка и полный отчёт по 20 проверкам.</li>
       <li>Python, FastAPI, разбор PDF и DOCX (PyMuPDF, pdfplumber), Docker, GitLab CI.
-          <b>Коммитов в проекте больше, чем у любого другого участника команды.</b></li>
-      <li>Сервис в живой эксплуатации департамента. Свёл три ложные жалобы сотрудников к одной
-          причине — конвертер отдавал текст без пробелов между словами — и починил класс ошибки,
-          а не три её симптома; отдельно нашёл и закрыл молчаливую потерю 52 строк характеристик.</li>
+          <b>Я основной автор репозитория — коммитов больше, чем у любого другого в команде.</b></li>
+      <li>Сервис работает в департаменте каждый день. Три жалобы сотрудников на ложные срабатывания
+          оказались одной ошибкой: конвертер склеивал слова без пробелов. Починил причину,
+          а не три симптома. Отдельно нашёл место, где на реальном документе незаметно терялись
+          52 строки характеристик.</li>
     </ul>
   </div>
 
@@ -116,30 +119,31 @@
     </div>
     <div class="sub">Продуктовая и клиентская аналитика</div>
     <ul>
-      <li>Выгружал данные из нескольких таблиц хранилища (транзакции, профили клиентов, история
-          операций), соединял и чистил их в SQL, собрал аналитическую витрину: сегментация клиентов,
-          когортный анализ удержания, метрики активности, среднего чека и оттока.</li>
-      <li>Подавал результаты интерактивными дашбордами на Python (pandas, NumPy, Matplotlib / Plotly) —
-          каждый с коротким выводом на языке бизнеса, а не набором цифр.</li>
-      <li>Главный результат — инструмент автоматической подготовки регулярного аналитического отчёта:
-          пайплайн собирает данные из нескольких источников, считает метрики, языковая модель пишет
-          комментарий, который раньше аналитики набирали руками; всё во внутреннем веб-интерфейсе
+      <li>Собирал данные из нескольких таблиц хранилища — транзакции, профили клиентов, история
+          операций, — соединял и чистил их в SQL и построил на них витрину: сегментация клиентов,
+          когортный анализ удержания, активность, средний чек, отток.</li>
+      <li>Результаты показывал интерактивными дашбордами на Python (pandas, NumPy, Matplotlib,
+          Plotly). К каждому писал короткий вывод обычными словами, а не выкладывал таблицу цифр.</li>
+      <li>Главная моя работа за стажировку — автоматическая сборка регулярного отчёта. Пайплайн
+          забирает данные из нескольких источников, считает метрики, а комментарий к ним пишет
+          языковая модель — раньше его набирали руками. Всё собрано во внутренний веб-интерфейс
           на FastAPI.</li>
     </ul>
-    <div class="res"><b>Результат:</b> подготовка отчёта — с почти полного рабочего дня до 15 минут.</div>
+    <div class="res"><b>Результат:</b> отчёт, на который уходил почти рабочий день, стал готовиться за 15 минут.</div>
   </div>
 
   <div class="entry">
     <div class="ehead">
-      <div class="etitle">Founder, Backend &amp; Infrastructure Engineer | HubVPN</div>
+      <div class="etitle">Backend- и инфраструктурный инженер | HubVPN, собственный проект</div>
       <div class="when">2024 — август 2026</div>
     </div>
-    <div class="sub">Собственная многоузловая сетевая платформа, свёрнута штатно</div>
+    <div class="sub">Многоузловая сетевая платформа для своих; закрыта штатно</div>
     <ul>
-      <li>Панель Remnawave поверх флота Xray/VLESS: немецкий мастер-узел, московский каскад,
+      <li>Панель Remnawave над флотом узлов Xray/VLESS: мастер-узел в Германии, каскад в Москве,
           зарубежные выходные ноды.</li>
-      <li>Провижининг нод через API, генерация client-specific роутинга, Telegram-first онбординг
-          на FastAPI; TLS, nginx, systemd, мониторинг, бэкапы и разбор инцидентов — от начала до конца.</li>
+      <li>Поднимал ноды через API панели, генерировал персональные правила маршрутизации,
+          подключение пользователей сделал через Telegram-бота на FastAPI. TLS, nginx, systemd,
+          мониторинг, бэкапы и разбор аварий — всё сам, от первой машины до последней.</li>
     </ul>
   </div>
 
@@ -150,27 +154,28 @@
       <div class="etitle">CRM для гольф-клуба</div>
       <div class="when">2025 — 2026</div>
     </div>
-    <div class="sub">Production-ready система управления клубом, работает в проде у заказчика</div>
+    <div class="sub">Система управления клубом; работает у заказчика в проде</div>
     <ul>
-      <li>Backend на FastAPI + SQLAlchemy: <b>53 REST-эндпоинта</b>, 25+ таблиц БД,
-          JWT-авторизация через httpOnly-cookies.</li>
-      <li>Frontend на React 18 + TypeScript + Vite + TanStack Query: tee-sheet бронирований
-          и дашборды аналитики; Docker Compose, nginx с TLS, Alembic, PostgreSQL.</li>
+      <li>Backend на FastAPI и SQLAlchemy: <b>53 REST-эндпоинта</b>, больше 25 таблиц в базе,
+          авторизация по JWT через httpOnly-cookies.</li>
+      <li>Frontend на React 18, TypeScript, Vite и TanStack Query: сетка бронирований (tee-sheet)
+          и дашборды аналитики. Docker Compose, nginx с TLS, Alembic, PostgreSQL.</li>
     </ul>
     <div class="links">→ github.com/Archangel-gabri/golf-crm</div>
   </div>
 
   <div class="entry">
     <div class="ehead">
-      <div class="etitle">Бенчмарк LLM на университетской математике</div>
+      <div class="etitle">Бенчмарк языковых моделей на университетской математике</div>
       <div class="when">2026</div>
     </div>
     <div class="sub">Открытый датасет и раннер, CC BY 4.0 / MIT</div>
     <ul>
-      <li>12 языковых моделей против 75 задач; оценивается <b>ход решения</b>, а не только финальный
-          ответ, по многомерной рубрике методом LLM-as-a-judge.</li>
-      <li>Оценено 887 ответов из 900, тест Фридмана χ² = 351, p &lt; 0,001. Задачи с эталонами, сырые
-          ответы моделей, промпты и код оценки открыты на двух языках.</li>
+      <li>Прогнал 12 моделей через 75 задач. Оценивается <b>ход решения</b>, а не только финальный
+          ответ: рубрика по нескольким критериям, в роли проверяющего — тоже языковая модель.</li>
+      <li>Оценено 887 ответов из 900, разница между моделями значима (тест Фридмана, p &lt; 0,001).
+          Задачи с эталонными решениями, сырые ответы моделей, промпты и код оценки выложены
+          на двух языках.</li>
     </ul>
     <div class="links">→ github.com/Archangel-gabri/llm-university-math-benchmark · llm-math-benchmark-harness</div>
   </div>
@@ -182,26 +187,13 @@
     </div>
     <div class="sub">Локальный командный центр на Electron</div>
     <ul>
-      <li>Свои серверы, подписки, финансы и квоты AI-провайдеров в одном окне. Хранилище — SQLCipher
-          с ключом Argon2id, секреты не покидают привилегированный процесс.</li>
-      <li>Ограничением была честность состояния: «недоступен» и «выключен» — разные вещи, поэтому один
-          неудавшийся опрос не помечает живую машину упавшей. <b>994 теста в 87 файлах.</b></li>
+      <li>Мои серверы, подписки, расходы и квоты AI-провайдеров в одном окне. База — SQLCipher
+          с ключом Argon2id; секреты не выходят за пределы привилегированного процесса.</li>
+      <li>Труднее всего было честно показывать состояние: «не отвечает» и «выключен» — разные вещи,
+          поэтому один неудачный опрос не объявляет живую машину упавшей.
+          <b>994 теста в 87 файлах.</b></li>
     </ul>
     <div class="links">→ github.com/Archangel-gabri/argus</div>
-  </div>
-
-  <div class="entry">
-    <div class="ehead">
-      <div class="etitle">FX Analytics</div>
-      <div class="when">2026</div>
-    </div>
-    <div class="sub">Мультиагентный анализ валютных рисков для компании-экспортёра (проект закрыт)</div>
-    <ul>
-      <li>Конвейер из четырёх агентов на Claude API с Tool Use (Orchestrator → Collector →
-          Quant + Macro → Reporter) и MCP-сервер.</li>
-      <li>Асинхронный сбор из ЦБ РФ (XML), MOEX ISS и yfinance, нормализация, исторический backfill,
-          bulk-upsert и плановые отчёты. Около $2,3 стоимости моделей на полный анализ.</li>
-    </ul>
   </div>
 
   <div class="entry">
@@ -209,10 +201,10 @@
       <div class="etitle">MedSpravki REU</div>
       <div class="when">2026</div>
     </div>
-    <div class="sub">ИС учёта медицинских справок кафедры физкультуры РЭУ</div>
+    <div class="sub">Учёт медицинских справок на кафедре физкультуры РЭУ</div>
     <ul>
-      <li>ASP.NET Core + PostgreSQL; локальная vision-модель Ollama читает сканы справок
-          в структурированные записи. Развёрнута на реальном железе.</li>
+      <li>ASP.NET Core и PostgreSQL. Локальная модель в Ollama читает сканы справок и раскладывает
+          их по полям базы, вручную остаётся только проверить. Работает на реальном железе.</li>
     </ul>
     <div class="links">→ github.com/Archangel-gabri/medspravki-reu</div>
   </div>
@@ -224,12 +216,14 @@
     </div>
     <div class="sub">Два браузерных расширения с открытым кодом, MV3, MIT</div>
     <ul>
-      <li>«Чистая выдача» чистит выдачу классифайда от перекупов по собственному критерию, а не по
-          фильтру площадки. Производительность мерил, а не угадывал:
-          <b>замирание страницы 0,8 c → 0,19 c</b>; 28 регрессионных тестов.</li>
-      <li>«Где дешевле» сравнивает цену товара на трёх маркетплейсах без общего идентификатора —
-          по бренду, модели и числам; показывает обычную цену, а не самую низкую, и честно молчит,
-          когда совпадение неуверенное.</li>
+      <li>«Чистая выдача» убирает из объявлений перекупов по своему критерию, а не по фильтру
+          площадки: у площадки под «частными продавцами» спокойно живут магазины. Скорость мерил,
+          а не угадывал — страница переставала отвечать на 0,8 с, стало
+          <b>0,19 с</b>; 28 регрессионных тестов.</li>
+      <li>«Где дешевле» сравнивает цену на трёх маркетплейсах, у которых нет общего идентификатора
+          товара: сопоставление идёт по бренду, модели и числам. Показывает обычную цену, а не самую
+          низкую: в дешёвом хвосте сидят подделки и не те комплектации. Если совпадение
+          неуверенное, так и пишет.</li>
     </ul>
     <div class="links">→ github.com/Archangel-gabri/clean-listings · price-elsewhere</div>
   </div>
@@ -239,13 +233,13 @@
       <div class="etitle">Ghost | Хакатон «GORKYCODE 2025»</div>
       <div class="when">2025 — 2026</div>
     </div>
-    <div class="sub">Голосовой ассистент на PySide6/Qt · AI-сервис автоматизации госзакупок</div>
+    <div class="sub">Голосовой ассистент на PySide6/Qt · AI-сервис для госзакупок</div>
     <ul>
-      <li>Ghost слышит вопрос, читает содержимое экрана и печатает ответ потоком в оверлей; QThread
-          держит цепочку звук → распознавание → модель и общается с интерфейсом только сигналами,
-          поэтому распознавание не морозит окно.</li>
-      <li>GORKYCODE: расчёт НМЦК и генерация ТЗ по 44-ФЗ, многошаговый диалоговый сбор требований
-          через webhook, GigaChat для анализа ответов. <b>Подготовка ТЗ: 8 часов → минуты.</b></li>
+      <li>Ghost слышит вопрос, читает содержимое экрана и печатает ответ потоком в оверлей.
+          Отдельный поток держит всю цепочку «звук → распознавание → модель» и общается
+          с интерфейсом только сигналами, поэтому окно не подвисает, пока идёт распознавание.</li>
+      <li>GORKYCODE: расчёт НМЦК и генерация техзадания по 44-ФЗ, сбор требований диалогом через
+          webhook, GigaChat для разбора ответов. <b>Подготовка ТЗ: 8 часов → минуты.</b></li>
     </ul>
     <div class="links">→ github.com/Archangel-gabri/ghost-assistant</div>
   </div>
